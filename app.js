@@ -7,10 +7,10 @@ switcher.addEventListener('click', function(){
 document.body.classList.toggle('dark-theme')
 
 var className = document.body.className;
-if(className == "dark-theme") {
-    this.textContent = "Escuro";
+if(document.body.classList.contains ('dark-theme')) {
+    this.textContent = "Claro";
 } 
 else {
-    this.textContent = "Claro";
+    this.textContent = "Escuro";
 }
 });
